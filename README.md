@@ -1,5 +1,5 @@
 # r-cran-docker
 
-Run a sample script
+## Run a sample script within R
 
-     docker run -ti --rm -v "$PWD":/home/docker -w /home/docker -u docker cran Rscript myscript.R
+     docker run -ti --rm -v "$PWD":/home/docker -w /home/docker -u docker genepi/r-cran-docker Rscript myscript.R
