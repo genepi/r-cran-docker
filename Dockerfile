@@ -3,7 +3,7 @@ FROM r-base:latest
 
 # pandoc
 RUN wget https://github.com/jgm/pandoc/releases/download/2.1.1/pandoc-2.1.1-1-amd64.deb -O pandoc-2.1.1-1-amd64.deb
-RUN sudo dpkg -i pandoc-2.1.1-1-amd64.deb
+RUN dpkg -i pandoc-2.1.1-1-amd64.deb
 
 # install additional packages
 RUN R -e "install.packages('RColorBrewer', repos = 'http://cran.rstudio.com' )"
