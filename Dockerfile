@@ -4,7 +4,7 @@ FROM r-base:3.6.1
 # set deb-src
 RUN echo "deb-src http://deb.debian.org/debian testing main" >> /etc/apt/sources.list
 RUN apt-get -y update
-RUN apt-get install libcurl4-openssl-dev libssl-dev -y
+RUN apt-get install libcurl4-openssl-dev libssl-dev libxml2-dev -y
 
 # pandoc
 RUN wget https://github.com/jgm/pandoc/releases/download/2.7.3/pandoc-2.7.3-1-amd64.deb -O pandoc.deb
