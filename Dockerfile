@@ -1,5 +1,5 @@
 
-FROM r-base:latest
+FROM r-base:3.6.1
 
 # set deb-src
 RUN echo "deb-src http://deb.debian.org/debian testing main" >> /etc/apt/sources.list
