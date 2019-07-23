@@ -22,5 +22,6 @@ RUN R -e "install.packages('plotly', repos = 'http://cran.rstudio.com' )"
 RUN R -e "install.packages('dplyr', repos = 'http://cran.rstudio.com' )"
 RUN R -e "install.packages('devtools', repos = 'http://cran.rstudio.com' )"
 RUN R -e "install.packages('flexdashboard', repos = 'http://cran.rstudio.com' )"
-RUN R -e "source('https://bioconductor.org/biocLite.R' )" -e 'biocLite("geneplotter")'
+RUN R -e "install.packages('BiocManager', repos = 'http://cran.rstudio.com' )"
+RUN R -e "BiocManager::install(c('geneplotter'))"
 RUN R -e "devtools::install_github('rstudio/DT')"
