@@ -7,7 +7,7 @@ RUN apt-get -y update
 RUN apt-get install libcurl4-openssl-dev libssl-dev -y
 
 # pandoc
-RUN wget https://github.com/jgm/pandoc/releases/download/2.5/pandoc-2.5-1-amd64.deb -O pandoc.deb
+RUN wget https://github.com/jgm/pandoc/releases/download/2.7.3/pandoc-2.7.3-1-amd64.deb -O pandoc.deb
 RUN dpkg -i pandoc.deb
 
 # install additional R packages
